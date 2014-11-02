@@ -11,6 +11,7 @@
       <script src="bower_components/foundation/js/foundation/foundation.js"></script>
       <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
 
+
   </head>
   <body>
   <div class="fixed">
@@ -26,7 +27,7 @@
           <section class="top-bar-section">
               <ul class="right">
                   <li class="active">
-                      <a href="#">Shopping Card</a>
+                      <a href="#" onclick="screenSize()">Shopping Card</a>
                   </li>
               </ul>
           </section>
@@ -34,57 +35,296 @@
       </nav>
   </div>
 
-  <!--<div id="navigation">-->
-      <!--<ul class="side-nav no-bullet">-->
-          <!--<li class>-->
-              <!--<a href="#">All</a>-->
-          <!--</li>-->
-          <!--<li class>-->
-              <!--<a href="#">Phones</a>-->
-          <!--</li>-->
-          <!--<li class>-->
-              <!--<a href="#">Monitors</a>-->
-          <!--</li>-->
-          <!--<li class>-->
-              <!--<a href="#">Keyboards</a>-->
-          <!--</li>-->
-          <!--<li class>-->
-              <!--<a href="#">Laptops</a>-->
-          <!--</li>-->
-          <!--<li class>-->
-              <!--<a href="#">Tablets</a>-->
-          <!--</li>-->
-      <!--</ul>-->
-  <!--</div>-->
 
-  <div class="row" style="display: inline-block">
-      <div class="large-2 medium-3 columns" id="empty" style="position: static !important;">
-            .
+
+  <div class="row">
+      <div class="large-2 columns">
+
+          <!--id="navigation"-->
+          <div id="navigation" class="hide-for-small-only">
+              <ul class="side-nav">
+                  <li class="nav-category">
+                      <a href="#">All</a>
+                  </li>
+                  <li class="nav-category">
+                      <a href="#">Phones</a>
+                  </li>
+                  <li class="nav-category">
+                      <a href="#">Monitors</a>
+                  </li>
+                  <li class="nav-category">
+                      <a href="#">Keyboards</a>
+                  </li>
+                  <li class="nav-category">
+                      <a href="#">Laptops</a>
+                  </li>
+                  <li class="nav-category">
+                      <a href="#">Tablets</a>
+                  </li>
+
+
+                  <!---->
+                  <!--<li>-->
+                      <!--<a href="#">All</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                      <!--<a href="#">Phones</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                      <!--<a href="#">Monitors</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                      <!--<a href="#">Keyboards</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                      <!--<a href="#">Laptops</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                      <!--<a href="#">Tablets</a>-->
+                  <!--</li>-->
+              </ul>
+          </div>
           <!--Some text-->
-          <!--<ul class="side-nav no-bullet">-->
-              <!--<li class>-->
-                  <!--<a href="#">All</a>-->
-              <!--</li>-->
-              <!--<li class>-->
-                  <!--<a href="#">Phones</a>-->
-              <!--</li>-->
-              <!--<li class>-->
-                  <!--<a href="#">Monitors</a>-->
-              <!--</li>-->
-              <!--<li class>-->
-                  <!--<a href="#">Keyboards</a>-->
-              <!--</li>-->
-              <!--<li class>-->
-                  <!--<a href="#">Laptops</a>-->
-              <!--</li>-->
-              <!--<li class>-->
-                  <!--<a href="#">Tablets</a>-->
-              <!--</li>-->
-          <!--</ul>-->
+
       </div>
       <!--Content grid-->
-      <div class="large-8 medium-9 small-12 columns"  id="main_column">
-          <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+      <div class="large-10 columns"  id="main_column">
+          <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4" id="content_table">
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone2.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone3.png">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone4.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone2.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone2.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone2.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone3.png">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone4.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone2.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone3.png">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone4.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone2.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone3.png">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone4.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
+              <li class="container">
+                  <div class="product">
+                      <div class="product-div-img">
+                          <img class="product-img" src="img/phone.jpg">
+                      </div>
+
+                      <h6 class="product-name">HTC-Windows-Phone-8X-8GB-3-xl-long-long-very-long</h6>
+                      <div class="product-div-price">
+                          <h5 class="product-price">500$</h5>
+                      </div>
+                  </div>
+              </li>
+
               <li class="container">
                   <div class="product">
                       <div class="product-div-img">
@@ -321,53 +561,8 @@
           </ul>
       </div>
 
-      <div class="large-2 columns" id="right_column">
-
-      </div>
-
   </div>
 
-  <script>
-      $(document).foundation();
-      $(document).ready(function(){
-          var containerWidth = $('.container').width();
-              if(containerWidth > 250){
-                  containerWidth = 250;
-          }
-          var productDivWidth = containerWidth-(15*2);
-          var productDivHeight = productDivWidth*1.25;
-//          $('.product').width(productDivWidth);
-          $('.product').height(productDivHeight);
-          var realHeight = $('.product').height();
-//          alert(containerWidth);
-      });
+  <script src="js/app.js"></script>
 
-      var main_column = $('#main_column');
-      var right_column = $('#right_column');
-
-      $(window).resize(function(){
-          var documentWidth = $(document).width();
-          if(documentWidth < 1400){
-            if(documentWidth > 1000){
-                if(main_column.hasClass('large-8')){
-                    main_column.removeClass('large-8');
-                    main_column.addClass('large-9');
-                    right_column.removeClass('large-2');
-                    right_column.addClass('large-1');
-                }
-            }
-          } else {
-            if(main_column.hasClass('large-9')){
-                main_column.removeClass('large-9');
-                main_column.addClass('large-8');
-                right_column.removeClass('large-1');
-                right_column.addClass('large-2');
-            }
-          }
-//          alert(documentWidth);
-          var containerWidth = $('.container').width();
-      });
-
-
-  </script>
   </body>
